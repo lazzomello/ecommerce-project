@@ -4,6 +4,7 @@ import {withRouter } from 'react-router-dom'
 
 
 const MenuItem = ({imageUrl,title,size,history,linkUrl,match})=>(
+
   <div className={`${size} menu-item`} 
   onClick={()=> history.push(`${match.url}${linkUrl}`)} >
     <div 
@@ -13,7 +14,7 @@ const MenuItem = ({imageUrl,title,size,history,linkUrl,match})=>(
       }}
     />
     <div className='content'>
-      <h1 className='title'>{title.toUpperCase()  }</h1>
+      <h1 className='title'>{title.toUpperCase()}</h1>
       <span className='subtitle'>SHOP NOW</span>
     </div>
   </div>
